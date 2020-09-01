@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+
+  .header__logo {
+    width: 100px;
+    position: absolute;
+    left: 55px;
+    top: 32px;
+  }
+
+  .header__verticalLine {
+    position: absolute;
+    left: 210px;
+  }
+
+  .arrow__down {
+    position: absolute;
+    left: 99px;
+    top: 671px;
+  }
+
+  .header__navigation {
+    position: absolute;
+    left: 280px;
+    top: 28px;
+    display: flex;
+    align-items: center;
+    width: 1094px;
+    height: 34px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    .header__nav {
+      position: absolute;
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 53px;
+          a {
+            color: #303031;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .header__contact {
+      position: absolute;
+      display: flex;
+      right: 0;
+
+      .header__contactElement {
+        display: flex;
+        align-items: center;
+        margin-right: 38px;
+        img {
+          margin-right: 5px;
+        }
+      }
+
+      .header__button {
+        background: transparent;
+        width: 102px;
+        height: 34px;
+        border: 1.5px solid #0052b4;
+        border-radius: 5px;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+/* BANNER */
+.banner {
+  position: absolute;
+  width: 1031px;
+  height: 151px;
+  top: 181px;
+  left: 280px;
+
+  .banner__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 61px;
+    line-height: 137%;
+  }
+
+  .banner__text {
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 175.1%;
+    color: #9da8b6;
+    margin: 57px 0 20px 0;
+  }
+
+  .banner__break {
+    position: absolute;
+    top: 500px;
+    left: 32px;
+    right: 138px;
+    width: 1031px;
+    display: flex;
+
+    .banner__line {
+      margin: 0 11px;
+      width: 285px;
+      top: 17.5px;
+    }
+  }
+
+  .banner__endText {
+    position: absolute;
+    top: 47px;
+    left: -20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ff7616;
+  }
+}
+
+/* CONTENT */
+.content {
+  position: absolute;
+  top: 912px;
+  left: 287px;
+  right: 237px;
+
+  .content__banner {
+    width: 1103px;
+    .content__bannerTitle {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+      color: #00367a;
+      margin-bottom: 36px;
+    }
+    .content___bannerText {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 175.1%;
+      color: #9da8b6;
+    }
+  }
+
+  .content__cardRow {
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+
+    .content__cardText {
+      width: 338px;
+      height: 80px;
+      h4 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 175.1%;
+        color: #00367a;
+      }
+      p {
+        margin-top: 21px;
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 175.1%;
+        font-weight: 100;
+        color: #9da8b6;
+      }
+    }
+
+    .content__cardImg {
+      position: relative;
+
+      .content__modalCard {
+        position: absolute;
+        top: 47px;
+        left: 56px;
+        width: 249px;
+        height: 96px;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        z-index: 2;
+        img {
+          position: absolute;
+          top: 19px;
+          left: 14px;
+        }
+        p {
+          position: absolute;
+          top: 14px;
+          right: 6px;
+          width: 200px;
+          height: 66px;
+          font-family: "Roboto";
+          font-size: 12.8px;
+          line-height: 175.1%;
+          color: #666666;
+        }
+      }
+    }
+  }
+
+  .row__first {
+    margin-top: 107px;
+    .cardImg {
+      opacity: 0.5;
+    }
+    .cardImg__circle {
+      position: absolute;
+      top: 202px;
+      right: 17px;
+    }
+  }
+
+  .row__second {
+    margin-top: 200px;
+    .cardImg__circleLeft {
+      position: absolute;
+      top: 60px;
+      left: -5px;
+    }
+
+    .cardImg__circleRight {
+      position: absolute;
+      top: 70px;
+      right: 22.27px;
+    }
+  }
+
+  .row__third {
+    margin-top: 200px;
+    .cardImg {
+      opacity: 0.5;
+    }
+    .cardImg__circleLeft {
+      position: absolute;
+      top: 250px;
+      left: 143px;
+    }
+
+    .cardImg__circleRight {
+      position: absolute;
+      top: 63px;
+      right: 5px;
+    }
+  }
+}
+
+/* CAROUSEL */
+
+.carousel {
+  position: absolute;
+  top: 2501px;
+  left: 211px;
+  min-width: 1229px;
+  height: 900px;
+  background: #fff;
+  .carousel__first {
+    position: absolute;
+    width: 1160px;
+    display: flex;
+    top: 270px;
+    left: 69px;
+    .carousel__text {
+      width: 338px;
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #00367a;
+        margin-bottom: 86px;
+      }
+
+      h5 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 175.1%;
+        color: #00367a;
+        margin-bottom: 21px;
+      }
+
+      p {
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 175.1%;
+        color: #9da8b6;
+      }
+    }
+
+    .carousel__img {
+      position: absolute;
+      top: 140px;
+      left: 761px;
+
+      .cardImg {
+        opacity: 0.5;
+        z-index: -1;
+      }
+      .modalCard {
+        width: 221px;
+        height: 45px;
+        display: flex;
+        box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
+        border-radius: 5px;
+        background-color: #fff;
+        border-radius: 5px 0px 0px 5px;
+        p {
+          width: 161px;
+          display: flex;
+          align-items: center;
+          font-family: "Roboto";
+          font-size: 11px;
+          line-height: 152.1%;
+          color: #9da8b6;
+          padding-left: 12px;
+          border-left: 1px solid #f0f0f0;
+        }
+
+        .modalCard__drop {
+          width: 45px;
+          height: 45px;
+          background: #fbfbfb;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .left {
+        position: absolute;
+        top: 24px;
+        left: -30px;
+      }
+      .right {
+        position: absolute;
+        bottom: -9.8px;
+        left: 68px;
+      }
+    }
+  }
+}
