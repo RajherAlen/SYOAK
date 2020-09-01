@@ -24,13 +24,14 @@ body {
 .header .header__verticalLine {
   position: absolute;
   left: 210px;
-  top: 0;
+  top: 0px;
 }
 
 .header .arrow__down {
   position: absolute;
   left: 99px;
   top: 671px;
+  cursor: pointer;
 }
 
 .header .header__navigation {
@@ -88,6 +89,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 38px;
+  cursor: pointer;
 }
 
 .header .header__navigation .header__contact .header__contactElement img {
@@ -101,6 +103,7 @@ body {
   border: 1.5px solid #0052b4;
   border-radius: 5px;
   margin-left: 12px;
+  cursor: pointer;
 }
 
 /* BANNER */

@@ -22,13 +22,14 @@ body {
   .header__verticalLine {
     position: absolute;
     left: 210px;
-    top: 0;
+    top: 0px;
   }
 
   .arrow__down {
     position: absolute;
     left: 99px;
     top: 671px;
+    cursor: pointer;
   }
 
   .header__navigation {
@@ -64,11 +65,11 @@ body {
       position: absolute;
       display: flex;
       right: 0;
-
       .header__contactElement {
         display: flex;
         align-items: center;
         margin-right: 38px;
+        cursor: pointer;
         img {
           margin-right: 5px;
         }
@@ -81,6 +82,7 @@ body {
         border: 1.5px solid #0052b4;
         border-radius: 5px;
         margin-left: 12px;
+        cursor: pointer;
       }
     }
   }
