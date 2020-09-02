@@ -8,18 +8,29 @@ $transitionBtn: 0.2s all ease-in-out;
 /* HEADER */
 .header {
   @include flexCenter();
-  width: 100%;
+  width: 100vw;
   padding: 28px 66px 0 55px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-
+  .hamburger {
+    position: absolute;
+    right: 40px;
+    display: none;
+    cursor: pointer;
+    .hamburger__line {
+      background-color: #303031;
+      width: 20px;
+      height: 3px;
+      margin: 4px 0;
+    }
+  }
   nav {
     @include flexCenter();
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     margin-left: 125px;
     ul {
       display: flex;
@@ -61,6 +72,24 @@ $transitionBtn: 0.2s all ease-in-out;
         background: $primaryBtn;
         color: #fff;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 10px;
+    nav {
+      display: none;
+    }
+    .hamburger {
+      display: block;
     }
   }
 }

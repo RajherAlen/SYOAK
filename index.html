@@ -12,14 +12,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>SYOAK</title>
   </head>
   <body>
     <!--HEADER-->
     <img src="./img/verticalLine.svg" alt="" class="verticalLine" />
     <img src="./img/arrowDown.svg" alt="" class="arrow__down" />
+
     <header class="header">
+      <div class="hamburger">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </div>
       <img src="./img/logo.svg" alt="" class="header__logo" />
       <nav>
         <ul>
@@ -159,7 +168,7 @@
     </div>
 
     <!-- CAROUSEL -->
-    <div class="carousel glider-contain"> 
+    <!-- <div class="carousel glider-contain"> 
       <div class="navigation"> 
        <img src="./img/arrowLeft.svg" alt="" id="arrow__prev " class="glider-prev" >
        <img src="./img/circleFull.svg" alt="" class="navigation__circle">
@@ -282,7 +291,7 @@
         </div>
       </div>
      </div>
-    </div>
+    </div> -->
 
     <!-- ACHIEVEMENTS -->
     <!-- <div class="achievements"> 
@@ -414,14 +423,14 @@
     <script src="app.js"></script>
     <script src="glider.min.js"></script>
     <script>
-      new Glider(document.querySelector('.glider'), {
-  slidesToShow: 1,
-  draggable: true,
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  }
-});
+      new Glider(document.querySelector(".glider"), {
+        slidesToShow: 1,
+        draggable: true,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next",
+        },
+      });
     </script>
   </body>
 </html>

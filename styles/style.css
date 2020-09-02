@@ -30,13 +30,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 28px 66px 0 55px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+}
+
+.header .hamburger {
+  position: absolute;
+  right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.header .hamburger .hamburger__line {
+  background-color: #303031;
+  width: 20px;
+  height: 3px;
+  margin: 4px 0;
 }
 
 .header nav {
@@ -49,7 +63,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   margin-left: 125px;
 }
 
@@ -111,9 +125,28 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 10px;
+  }
+  .header nav {
+    display: none;
+  }
+  .header .hamburger {
+    display: block;
+  }
+}
+
 /* BANNER */
 .banner {
-  width: 70%;
+  min-width: 300px;
+  max-width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,10 +159,12 @@ body {
           align-items: flex-start;
   margin-left: 280px;
   padding-top: 181px;
+  padding-right: 5%;
   overflow: hidden;
 }
 
 .banner .banner__title {
+  min-width: 300px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -140,16 +175,17 @@ body {
 }
 
 .banner .banner__text {
+  width: 90%;
+  max-width: 500px;
   font-family: "Roboto";
   font-size: 20px;
   line-height: 175.1%;
   color: #9da8b6;
   margin-bottom: 20px;
-  width: 50%;
 }
 
 .banner .banner__break {
-  width: 90%;
+  max-width: 90%;
   margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,10 +208,33 @@ body {
   color: #ff7616;
 }
 
+@media only screen and (max-width: 1024px) {
+  .banner {
+    padding-top: 100px;
+  }
+  .banner .banner__title {
+    font-size: 50px;
+  }
+  .banner .banner__break .banner__line {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .banner__title {
+    font-size: 40px;
+  }
+  .banner .banner__break .banner__line {
+    width: 110px;
+  }
+}
+
 .content {
   width: 75%;
-  margin-left: 280px;
+  min-width: 300px;
+  margin-left: 211px;
   margin-top: 169px;
+  padding-left: 74px;
 }
 
 .content .content__banner {
@@ -203,7 +262,8 @@ body {
 }
 
 .content .content__cardRow {
-  width: 920px;
+  min-width: 300px;
+  max-width: 100%;
   height: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,7 +275,7 @@ body {
 }
 
 .content .content__cardRow .content__cardText {
-  width: 338px;
+  width: 488px;
 }
 
 .content .content__cardRow .content__cardText h4 {
@@ -279,7 +339,7 @@ body {
 .content .row__first .content__cardImg .content__modalCard p {
   width: 200px;
   height: 66px;
-  font-family: "Roboto";
+  font-family: "Quicksand";
   font-weight: 500;
   font-size: 12.8px;
   line-height: 175.1%;
@@ -333,221 +393,36 @@ body {
   right: 125px;
 }
 
-.carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  padding-left: 280px;
-  display: flex;
+@media only screen and (max-width: 1024px) {
+  .content .content__cardRow .content__cardText {
+    width: 320px;
+  }
 }
 
-.carousel .navigation {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.carousel .navigation .glider-prev {
-  position: absolute;
-  left: -25px;
-  top: 7.5px;
-}
-
-.carousel .navigation .glider-next {
-  position: absolute;
-  top: 7.5px;
-  left: 42px;
-}
-
-.carousel .glider {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel .glider .carousel__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100vw !important;
-  padding-right: 5%;
-  padding-top: 110px;
-}
-
-.carousel .glider .carousel__card .carousel__text {
-  width: 450px;
-}
-
-.carousel .glider .carousel__card .carousel__text h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
-  color: #00367a;
-}
-
-.carousel .glider .carousel__card .carousel__text h5 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 175.1%;
-  color: #00367a;
-  margin: 75px 0 36px 0;
-}
-
-.carousel .glider .carousel__card .carousel__text p {
-  font-family: "Quicksand";
-  font-size: 16px;
-  line-height: 175.1%;
-  color: #9da8b6;
-}
-
-.carousel .glider .carousel__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.carousel .glider .carousel__img .cardImg {
-  opacity: 0.5;
-}
-
-.carousel .glider .carousel__img .modalCard {
-  position: absolute;
-  background-color: #fff;
-  -webkit-box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
-          box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 221px;
-  height: 45px;
-}
-
-.carousel .glider .carousel__img .modalCard .modalCard__drop {
-  width: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.carousel .glider .carousel__img .modalCard p {
-  width: 161px;
-  margin-top: 5px;
-  font-family: "Quicksand";
-  font-size: 11px;
-  line-height: 152.1%;
-  font-weight: 600;
-  color: #9da8b6;
-}
-
-.carousel .glider #card__first .carousel__img .card__left {
-  position: absolute;
-  top: 73px;
-  left: -40px;
-}
-
-.carousel .glider #card__first .carousel__img .card__right {
-  position: absolute;
-  bottom: 56px;
-  left: 70px;
-}
-
-.carousel .glider #card__first .navigation__text {
-  left: 0;
-  position: absolute;
-  top: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
-}
-
-.carousel .glider #card__second .carousel__img .card__left {
-  position: absolute;
-  bottom: 90px;
-  left: -30px;
-}
-
-.carousel .glider #card__second .carousel__img .card__right {
-  position: absolute;
-  top: 108px;
-  left: 170px;
-}
-
-.carousel .glider #card__second .navigation__text {
-  position: absolute;
-  top: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
-}
-
-.carousel .glider #card__third .carousel__img .card__left {
-  position: absolute;
-  bottom: 122px;
-  left: -8px;
-}
-
-.carousel .glider #card__third .carousel__img .card__right {
-  position: absolute;
-  top: 108px;
-  left: 70px;
-}
-
-.carousel .glider #card__third .navigation__text {
-  position: absolute;
-  top: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
-}
-
-.carousel .glider #card__fourth .carousel__img .card__left {
-  position: absolute;
-  bottom: 138px;
-  left: -48px;
-}
-
-.carousel .glider #card__fourth .carousel__img .card__right {
-  position: absolute;
-  top: 90px;
-  left: -20px;
-}
-
-.carousel .glider #card__fourth .navigation__text {
-  position: absolute;
-  top: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
+@media only screen and (max-width: 768px) {
+  .content .content__cardRow {
+    width: 420px;
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content .content__cardRow .content__cardText {
+    width: 520px;
+    margin-bottom: 50px;
+  }
+  .content .row__first {
+    margin-bottom: 390px;
+  }
+  .content .row__second .cardImg {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .content .row__second .content__cardText {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
