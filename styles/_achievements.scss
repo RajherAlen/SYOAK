@@ -4,8 +4,8 @@
   @include width1440();
   margin-top: 131px;
   .achievements__container {
-    padding-left: 79px;
-    padding-right: 69px;
+    @include paddingLeftRight();
+
     h1 {
       @include bigTitle();
       margin-bottom: 30px;

@@ -10,8 +10,8 @@
   padding-top: 181px;
   overflow: hidden;
   .banner__container {
-    padding-left: 79px;
-    padding-right: 69px;
+    @include paddingLeftRight();
+
     .banner__title {
       min-width: 300px;
       font-family: $fontInter;

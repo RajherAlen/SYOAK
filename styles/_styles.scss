@@ -1,12 +1,17 @@
 $primaryBtn: #0052b4;
 $transitionBtn: 0.2s all ease-in-out;
 $fontInter: "Inter";
-$fontRoboto: "Roboto";
+$fontRoboto: "Quicksand";
 
 @mixin width1440 {
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 210px;
+}
+
+@mixin paddingLeftRight {
+  padding-left: 79px;
+  padding-right: 69px;
 }
 
 @mixin flexCenter {
@@ -66,14 +71,14 @@ $fontRoboto: "Roboto";
 }
 
 @mixin smallText {
-  font-family: "Roboto";
+  font-family: "Quicksand";
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
 }
 
 @mixin formText {
-  font-family: "Roboto";
+  font-family: "Quicksand";
   font-size: 15px;
   line-height: 20px;
   display: flex;
@@ -89,4 +94,19 @@ $fontRoboto: "Roboto";
   font-size: 12px;
   line-height: 20px;
   color: rgba(152, 152, 152, 0.75);
+}
+
+@mixin footerText {
+  font-size: 12.8px;
+  line-height: 22px;
+  font-weight: 100;
+}
+
+@mixin footerTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175.1%;
+  color: #00367a;
 }

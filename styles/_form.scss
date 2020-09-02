@@ -7,8 +7,7 @@
   position: relative;
 
   .form__container {
-    padding-left: 79px;
-    padding-right: 69px;
+    @include paddingLeftRight();
     display: flex;
     justify-content: space-between;
     .right__section {
@@ -42,6 +41,7 @@
           margin: 4px 0 28px 0;
         }
         textarea {
+          @include formText();
           border: 0;
           outline-width: 0;
           background-color: transparent;
