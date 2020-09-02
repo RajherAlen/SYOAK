@@ -1,52 +1,52 @@
-$fontInter: "Inter";
-$fontRoboto: "Roboto";
+@import "./styles";
 
 /* BANNER */
 
 .banner {
-  min-width: 300px;
-  max-width: 85%;
+  @include width1440();
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 280px;
   padding-top: 181px;
-  padding-right: 5%;
   overflow: hidden;
-  .banner__title {
-    min-width: 300px;
-    font-family: $fontInter;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 61px;
-    line-height: 137%;
-    color: #000000;
-    margin-bottom: 57px;
-  }
-  .banner__text {
-    width: 90%;
-    max-width: 500px;
-    font-family: $fontRoboto;
-    font-size: 20px;
-    line-height: 175.1%;
-    color: #9da8b6;
-    margin-bottom: 20px;
-  }
-  .banner__break {
-    max-width: 90%;
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    margin-left: 14px;
-  }
-  .banner__endText {
-    font-family: $fontInter;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ff7616;
+  .banner__container {
+    padding-left: 79px;
+    padding-right: 69px;
+    .banner__title {
+      min-width: 300px;
+      font-family: $fontInter;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 61px;
+      line-height: 137%;
+      color: #000000;
+      margin-bottom: 57px;
+    }
+    .banner__text {
+      width: 90%;
+      max-width: 500px;
+      font-family: $fontRoboto;
+      font-size: 20px;
+      line-height: 175.1%;
+      color: #9da8b6;
+      margin-bottom: 20px;
+    }
+    .banner__break {
+      max-width: 90%;
+      margin-top: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      margin-left: 14px;
+    }
+    .banner__endText {
+      font-family: $fontInter;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ff7616;
+    }
   }
 }
 

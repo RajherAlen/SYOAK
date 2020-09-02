@@ -1,0 +1,61 @@
+$primaryBtn: #0052b4;
+$transitionBtn: 0.2s all ease-in-out;
+$fontInter: "Inter";
+$fontRoboto: "Roboto";
+
+@mixin width1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 210px;
+  
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin orangeText {
+  position: absolute;
+  top: 210px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ff7616;
+}
+
+@mixin bigTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #00367a;
+}
+
+@mixin smallTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 175.1%;
+  color: #00367a;
+}
+
+@mixin bigText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 175.1%;
+  color: #9da8b6;
+}
+
+@mixin smallText {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 175.1%;
+  color: #9da8b6;
+}
