@@ -1,0 +1,66 @@
+$primaryBtn: #0052b4;
+$transitionBtn: 0.2s all ease-in-out;
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  @include flexCenter();
+  width: 100%;
+  padding: 28px 66px 0 55px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  nav {
+    @include flexCenter();
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 125px;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 53px;
+        a {
+          color: #303031;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .header__logo {
+    width: 100px;
+  }
+  .header__contact {
+    display: flex;
+    .header__contactElement {
+      @include flexCenter();
+      margin-right: 38px;
+      cursor: pointer;
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    .header__button {
+      background: transparent;
+      width: 102px;
+      height: 34px;
+      border: 1.5px solid $primaryBtn;
+      border-radius: 5px;
+      margin-left: 12px;
+      cursor: pointer;
+      transition: $transitionBtn;
+      &:hover {
+        background: $primaryBtn;
+        color: #fff;
+      }
+    }
+  }
+}

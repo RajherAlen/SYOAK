@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--STYLES-->
+
+    <link rel="stylesheet" href="./styles/glider.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <!--FONT-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <title>SYOAK</title>
   </head>
   <body>
     <!--HEADER-->
+    <img src="./img/verticalLine.svg" alt="" class="verticalLine" />
+    <img src="./img/arrowDown.svg" alt="" class="arrow__down" />
     <header class="header">
       <img src="./img/logo.svg" alt="" class="header__logo" />
-      <img src="./img/verticalLine.svg" alt="" class="header__verticalLine" />
-      <img src="./img/arrowDown.svg" alt="" class="arrow__down" />
-      <div class="header__navigation">
-        <nav class="header__nav">
-          <ul>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
 
         <div class="header__contact">
           <div class="header__contactElement">
@@ -39,10 +42,10 @@
 
           <button class="header__button">Sign up</button>
         </div>
-      </div>
+      </nav>
     </header>
 
-    <!--BANNER-->
+    <!-- BANNER -->
     <div class="banner">
       <h1 class="banner__title">
         Our Bussines takes the Industry of Oil & Gass to a new level.
@@ -62,8 +65,8 @@
         <img src="./img/circleBlue.svg" alt="" />
         <img src="./img/line.svg" alt="" class="banner__line" />
         <img src="./img/circleBlue.svg" alt="" />
-        <p class="banner__endText">Extraction</p>
       </div>
+      <p class="banner__endText">Extraction</p>
     </div>
 
     <!-- CONTENT -->
@@ -78,10 +81,6 @@
           industrial and residential customers through transmission pipelines.
         </p>
       </div>
-
-      <!---->
-
-      <!---->
 
       <div class="content__cardRow row__first">
         <div class="content__cardText">
@@ -105,18 +104,16 @@
             </p>
           </div>
 
-          <img src="./img/motor.svg" alt="" class="cardImg" />
-          <img src="./img//circleFull.svg" alt="" class="cardImg__circle" />
+          <div class="cardImg">
+            <img src="./img/motor.svg" alt="" class="cardImg__main" />
+            <img src="./img//circleFull.svg" alt="" class="cardImg__circle" />
+          </div>
         </div>
       </div>
 
-      <!---->
-
-      <!---->
-
       <div class="content__cardRow row__second">
-        <div class="content__cardImg">
-          <img src="./img/fuel.svg" alt="" class="cardImg" />
+        <div class="cardImg">
+          <img src="./img/fuel.svg" alt="" class="cardImg__main" />
           <img src="./img//circleFull.svg" alt="" class="cardImg__circleLeft" />
           <img
             src="./img//circleFull.svg"
@@ -137,13 +134,7 @@
         </div>
       </div>
 
-      <!---->
-
-      <!---->
-      <!---->
-
-      <!---->
-
+      
       <div class="content__cardRow row__third">
         <div class="content__cardText">
           <h4>
@@ -155,8 +146,8 @@
           </p>
         </div>
 
-        <div class="content__cardImg">
-          <img src="./img/truck.svg" alt="" class="cardImg" />
+        <div class="cardImg">
+          <img src="./img/truck.svg" alt="" class="cardImg__main" />
           <img src="./img//circleFull.svg" alt="" class="cardImg__circleLeft" />
           <img
             src="./img//circleFull.svg"
@@ -165,20 +156,20 @@
           />
         </div>
       </div>
-
     </div>
- 
-    <!-- CAROUSEL -->
-    <div class="carousel"> 
-      <div class="carousel__first">
-       <div class="navigation"> 
-        <img src="./img/arrowLeft.svg" alt="">
-        <img src="./img/circleFull.svg" alt="" class="navigation__circle">
-        <img src="./img/arrowRight.svg" alt="">
-        <img src="./img/lineLong.svg" alt="">
-        <p class="navigation__text">Extraction</p>
-      </div>
 
+    <!-- CAROUSEL -->
+    <div class="carousel glider-contain"> 
+      <div class="navigation"> 
+       <img src="./img/arrowLeft.svg" alt="" id="arrow__prev " class="glider-prev" >
+       <img src="./img/circleFull.svg" alt="" class="navigation__circle">
+       <img src="./img/arrowRight.svg" alt="" id="arrow__next" class="glider-next">
+       <img src="./img/lineLong.svg" alt="">
+      </div>
+      
+     <div class="glider">
+      <div class="carousel__card " id="card__first">
+        <p class="navigation__text">Extraction</p>
         <div class="carousel__text">
           <h1>How <br> We Do It</h1>
           <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk</h5>
@@ -189,14 +180,14 @@
           
             <img src="./img/station.svg" alt="" class="cardImg"  >
          
-            <div class="modalCard right">
+            <div class="modalCard card__right">
               <div class="modalCard__drop">
                 <img src="./img/drop.svg" alt="">
               </div>
                 <p>Syoak serves more than 2,500 petrol stations globally</p>
             </div>
 
-            <div class="modalCard left">
+            <div class="modalCard card__left">
               <div class="modalCard__drop">
                 <img src="./img/drop.svg" alt="">
               </div>
@@ -204,12 +195,97 @@
             </div>
         </div>
       </div>
+
+ 
+      <div class="carousel__card " id="card__second">
+        <p class="navigation__text">Transport</p>
+        <div class="carousel__text">
+          <h1>Mode of <br> Transport</h1>
+          <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk</h5>
+          <p>We have a long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="carousel__img">
+          
+            <img src="./img/ship.svg" alt="" class="cardImg"  >
+         
+            <div class="modalCard card__left">
+              <div class="modalCard__drop">
+                <img src="./img/drop.svg" alt="">
+              </div>
+                <p>Syoak serves more than 2,500 petrol stations globally</p>
+            </div>
+
+            <div class="modalCard card__right">
+              <div class="modalCard__drop">
+                <img src="./img/drop.svg" alt="">
+              </div>
+                <p>Syoak serves more than 2,500 petrol stations globally</p>      
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel__card " id="card__third">
+        <p class="navigation__text">Refining</p>
+        <div class="carousel__text">
+          <h1>We Make it <br> More Efficient</h1>
+          <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk</h5>
+          <p>We have a long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="carousel__img">
+          
+            <img src="./img/platform.svg" alt="" class="cardImg"  >
+         
+            <div class="modalCard card__left">
+              <div class="modalCard__drop">
+                <img src="./img/drop.svg" alt="">
+              </div>
+                <p>Syoak serves more than 2,500 petrol stations globally</p>
+            </div>
+
+            <div class="modalCard card__right">
+              <div class="modalCard__drop">
+                <img src="./img/drop.svg" alt="">
+              </div>
+                <p>Syoak serves more than 2,500 petrol stations globally</p>      
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel__card " id="card__fourth">
+        <p class="navigation__text">Export</p>
+        
+        <div class="carousel__text">
+          <h1>Where <br> Does it Go</h1>
+          <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk</h5>
+          <p>We have a long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="carousel__img">
+          
+            <img src="./img/truck.svg" alt="" class="cardImg"  >
+         
+            <div class="modalCard card__left">
+              <div class="modalCard__drop">
+                <img src="./img/drop.svg" alt="">
+              </div>
+                <p>Syoak serves more than 2,500 petrol stations globally</p>
+            </div>
+
+            <div class="modalCard card__right">
+              <div class="modalCard__drop">
+                <img src="./img/drop.svg" alt="">
+              </div>
+                <p>Syoak serves more than 2,500 petrol stations globally</p>      
+            </div>
+        </div>
+      </div>
+     </div>
     </div>
 
-
-
     <!-- ACHIEVEMENTS -->
-    <div class="achievements"> 
+    <!-- <div class="achievements"> 
       <h1 class="achievements__title">
         Our Achievements 
       </h1>
@@ -245,12 +321,10 @@
           <p>Square Meters Built</p>
         </div>
       </div>
-    </div>
-
-
+    </div> -->
 
     <!-- FORM -->
-    <div class="form__section">
+    <!-- <div class="form__section">
       <div class="left__section">
         <h1>Get in Touch With <br> Us</h1>
 
@@ -273,9 +347,10 @@
         <img src="./img/googleMap.svg" alt="">
         <img src="./img/circleFull.svg" alt="" class="circle">
       </div>
-    </div>
+    </div> -->
 
-    <footer>
+    <!--FOOTER-->
+    <!-- <footer>
       <img src="./img/hrFullLine.svg" alt="" class="hrLineTop">
       <img src="./img/hrFullLine.svg" alt="" class="hrLineBottom">
 
@@ -333,9 +408,20 @@
         <p>Privacy Pol</p>
       </div>
 
-    </footer>
+    </footer> -->
 
-
+    <!--SCRIPT-->
     <script src="app.js"></script>
+    <script src="glider.min.js"></script>
+    <script>
+      new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+    </script>
   </body>
 </html>
