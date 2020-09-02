@@ -3,6 +3,7 @@
 /* HEADER */
 .header {
   @include flexCenter();
+  position: relative;
   margin: 0 auto;
   max-width: 1440px;
   padding: 28px 66px 0 55px;
