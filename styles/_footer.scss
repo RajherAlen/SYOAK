@@ -22,7 +22,7 @@ footer {
     justify-content: space-between;
     margin-bottom: 74px;
     .footer__left {
-      width: 317px;
+      width: 345px;
       .footer__logo {
         margin-left: 3px;
         margin-bottom: 8px;
@@ -32,6 +32,7 @@ footer {
         @include footerText();
         color: #9da8b6;
         margin-bottom: 12px;
+        font-weight: 300;
       }
       h4 {
         @include footerText();

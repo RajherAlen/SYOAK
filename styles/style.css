@@ -183,7 +183,7 @@ body {
 .banner .banner__container .banner__text {
   width: 90%;
   max-width: 500px;
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 175.1%;
   color: #9da8b6;
@@ -295,7 +295,7 @@ body {
 }
 
 .content .content__cardRow .content__cardText p {
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
@@ -521,7 +521,7 @@ body {
 }
 
 .carousel .carousel__container .glider .carousel__card .carousel__text p {
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
@@ -530,6 +530,7 @@ body {
 .carousel .carousel__container .glider .carousel__img {
   position: relative;
   padding-right: 139px;
+  padding-top: 50px;
 }
 
 .carousel .carousel__container .glider .carousel__img .cardImg {
@@ -562,7 +563,7 @@ body {
 .carousel .carousel__container .glider .carousel__img .modalCard p {
   width: 161px;
   margin-top: 5px;
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 11px;
   line-height: 152.1%;
   font-weight: 600;
@@ -726,7 +727,7 @@ body {
 }
 
 .achievements .achievements__container .achievements__row .achievements__card p {
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
@@ -813,7 +814,7 @@ body {
 }
 
 .form__section .form__container .left__section form input {
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
   display: -webkit-box;
@@ -832,7 +833,7 @@ body {
 }
 
 .form__section .form__container .left__section form textarea {
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
   display: -webkit-box;
@@ -859,10 +860,11 @@ body {
 }
 
 .form__section .form__container .left__section form button {
+  font-family: "Inter";
   width: 145px;
   height: 45px;
-  font-family: "Inter";
   font-style: normal;
+  border: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -885,7 +887,7 @@ body {
 }
 
 .form__section .form__container .left__section form .form__checkbox p {
-  font-family: "Quicksand";
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
   display: -webkit-box;
@@ -933,7 +935,7 @@ footer .footer__container {
 }
 
 footer .footer__container .footer__left {
-  width: 317px;
+  width: 345px;
 }
 
 footer .footer__container .footer__left .footer__logo {
@@ -943,17 +945,18 @@ footer .footer__container .footer__left .footer__logo {
 
 footer .footer__container .footer__left p {
   height: 83px;
+  font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
   line-height: 22px;
-  font-weight: 100;
   color: #9da8b6;
   margin-bottom: 12px;
+  font-weight: 300;
 }
 
 footer .footer__container .footer__left h4 {
+  font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
   line-height: 22px;
-  font-weight: 100;
   color: #00367a;
   margin-bottom: 19px;
 }
@@ -989,9 +992,9 @@ footer .footer__container .footer__right li {
 }
 
 footer .footer__container .footer__right li a {
+  font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
   line-height: 22px;
-  font-weight: 100;
   color: #9da8b6;
   text-decoration: none;
 }
@@ -999,9 +1002,9 @@ footer .footer__container .footer__right li a {
 footer .footer__bottom {
   padding-left: 79px;
   padding-right: 69px;
+  font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
   line-height: 22px;
-  font-weight: 100;
   color: #9da8b6;
   font-weight: 500;
   display: -webkit-box;
