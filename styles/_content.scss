@@ -27,11 +27,10 @@
 
     .content__cardText {
       width: 488px;
-
-      h4 {
+      .content__cardTitle {
         @include smallTitle();
       }
-      p {
+      .content__cardText {
         @include smallText();
         margin-top: 39px;
       }

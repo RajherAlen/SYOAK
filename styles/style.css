@@ -285,7 +285,7 @@ body {
   width: 488px;
 }
 
-.content .content__cardRow .content__cardText h4 {
+.content .content__cardRow .content__cardText .content__cardTitle {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -294,8 +294,9 @@ body {
   color: #00367a;
 }
 
-.content .content__cardRow .content__cardText p {
+.content .content__cardRow .content__cardText .content__cardText {
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
@@ -497,11 +498,11 @@ body {
   padding-top: 110px;
 }
 
-.carousel .carousel__container .glider .carousel__card .carousel__text {
+.carousel .carousel__container .glider .carousel__card .carousel__left {
   width: 450px;
 }
 
-.carousel .carousel__container .glider .carousel__card .carousel__text h1 {
+.carousel .carousel__container .glider .carousel__card .carousel__left .carousel__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -510,7 +511,7 @@ body {
   color: #00367a;
 }
 
-.carousel .carousel__container .glider .carousel__card .carousel__text h5 {
+.carousel .carousel__container .glider .carousel__card .carousel__left .carousel__boldText {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -520,24 +521,24 @@ body {
   margin: 75px 0 36px 0;
 }
 
-.carousel .carousel__container .glider .carousel__card .carousel__text p {
+.carousel .carousel__container .glider .carousel__card .carousel__left .carousel__text {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
 }
 
-.carousel .carousel__container .glider .carousel__img {
+.carousel .carousel__container .glider .carousel__right {
   position: relative;
   padding-right: 139px;
   padding-top: 50px;
 }
 
-.carousel .carousel__container .glider .carousel__img .cardImg {
+.carousel .carousel__container .glider .carousel__right .cardImg {
   opacity: 0.5;
 }
 
-.carousel .carousel__container .glider .carousel__img .modalCard {
+.carousel .carousel__container .glider .carousel__right .modalCard {
   position: absolute;
   background-color: #fff;
   -webkit-box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
@@ -550,7 +551,7 @@ body {
   height: 45px;
 }
 
-.carousel .carousel__container .glider .carousel__img .modalCard .modalCard__drop {
+.carousel .carousel__container .glider .carousel__right .modalCard .modalCard__drop {
   width: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +561,7 @@ body {
           justify-content: center;
 }
 
-.carousel .carousel__container .glider .carousel__img .modalCard p {
+.carousel .carousel__container .glider .carousel__right .modalCard .modal__text {
   width: 161px;
   margin-top: 5px;
   font-family: "Montserrat", sans-serif;
@@ -570,13 +571,13 @@ body {
   color: #9da8b6;
 }
 
-.carousel .carousel__container .glider #card__first .carousel__img .card__left {
+.carousel .carousel__container .glider #card__first .carousel__right .card__left {
   position: absolute;
   top: 73px;
   left: -40px;
 }
 
-.carousel .carousel__container .glider #card__first .carousel__img .card__right {
+.carousel .carousel__container .glider #card__first .carousel__right .card__right {
   position: absolute;
   bottom: 56px;
   left: 70px;
@@ -594,13 +595,13 @@ body {
   color: #ff7616;
 }
 
-.carousel .carousel__container .glider #card__second .carousel__img .card__left {
+.carousel .carousel__container .glider #card__second .carousel__right .card__left {
   position: absolute;
   bottom: 90px;
   left: -30px;
 }
 
-.carousel .carousel__container .glider #card__second .carousel__img .card__right {
+.carousel .carousel__container .glider #card__second .carousel__right .card__right {
   position: absolute;
   top: 108px;
   left: 170px;
@@ -617,13 +618,13 @@ body {
   color: #ff7616;
 }
 
-.carousel .carousel__container .glider #card__third .carousel__img .card__left {
+.carousel .carousel__container .glider #card__third .carousel__right .card__left {
   position: absolute;
   bottom: 122px;
   left: -8px;
 }
 
-.carousel .carousel__container .glider #card__third .carousel__img .card__right {
+.carousel .carousel__container .glider #card__third .carousel__right .card__right {
   position: absolute;
   top: 108px;
   left: 70px;
@@ -640,13 +641,13 @@ body {
   color: #ff7616;
 }
 
-.carousel .carousel__container .glider #card__fourth .carousel__img .card__left {
+.carousel .carousel__container .glider #card__fourth .carousel__right .card__left {
   position: absolute;
   bottom: 138px;
   left: -48px;
 }
 
-.carousel .carousel__container .glider #card__fourth .carousel__img .card__right {
+.carousel .carousel__container .glider #card__fourth .carousel__right .card__right {
   position: absolute;
   top: 90px;
   left: -20px;
@@ -675,7 +676,7 @@ body {
   padding-right: 69px;
 }
 
-.achievements .achievements__container h1 {
+.achievements .achievements__container .achievements__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -685,7 +686,7 @@ body {
   margin-bottom: 30px;
 }
 
-.achievements .achievements__container p {
+.achievements .achievements__container .achievements__text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -717,7 +718,7 @@ body {
   padding-left: 23px;
 }
 
-.achievements .achievements__container .achievements__row .achievements__card h3 {
+.achievements .achievements__container .achievements__row .achievements__card .achievements__number {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -726,8 +727,9 @@ body {
   color: #00367a;
 }
 
-.achievements .achievements__container .achievements__row .achievements__card p {
+.achievements .achievements__container .achievements__row .achievements__card .achievements__text {
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;
@@ -773,27 +775,27 @@ body {
           justify-content: space-between;
 }
 
-.form__section .form__container .right__section {
+.form__section .form__container .form__right {
   position: relative;
 }
 
-.form__section .form__container .right__section .googleMap {
+.form__section .form__container .form__right .googleMap {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.form__section .form__container .right__section .circle {
+.form__section .form__container .form__right .circle {
   position: absolute;
   bottom: 170px;
   left: -343px;
 }
 
-.form__section .form__container .left__section {
+.form__section .form__container .form__left {
   width: 441px;
 }
 
-.form__section .form__container .left__section h1 {
+.form__section .form__container .form__left .form__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -803,7 +805,7 @@ body {
   margin-bottom: 94px;
 }
 
-.form__section .form__container .left__section form {
+.form__section .form__container .form__left form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,7 +815,7 @@ body {
           flex-direction: column;
 }
 
-.form__section .form__container .left__section form input {
+.form__section .form__container .form__left form .form__input {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -832,7 +834,7 @@ body {
   margin: 4px 0 28px 0;
 }
 
-.form__section .form__container .left__section form textarea {
+.form__section .form__container .form__left form .form__textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -850,7 +852,7 @@ body {
   height: 143px;
 }
 
-.form__section .form__container .left__section form span {
+.form__section .form__container .form__left form .form__text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -859,7 +861,7 @@ body {
   color: rgba(152, 152, 152, 0.75);
 }
 
-.form__section .form__container .left__section form button {
+.form__section .form__container .form__left form .form__button {
   font-family: "Inter";
   width: 145px;
   height: 45px;
@@ -874,7 +876,7 @@ body {
   width: 225px;
 }
 
-.form__section .form__container .left__section form .form__checkbox {
+.form__section .form__container .form__left form .form__checkbox {
   margin-left: -17px;
   height: 64px;
   margin-bottom: 35px;
@@ -886,7 +888,7 @@ body {
           align-items: center;
 }
 
-.form__section .form__container .left__section form .form__checkbox p {
+.form__section .form__container .form__left form .form__checkbox .checkbox__text {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -943,7 +945,7 @@ footer .footer__container .footer__left .footer__logo {
   margin-bottom: 8px;
 }
 
-footer .footer__container .footer__left p {
+footer .footer__container .footer__left .footer__text {
   height: 83px;
   font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
@@ -953,7 +955,7 @@ footer .footer__container .footer__left p {
   font-weight: 300;
 }
 
-footer .footer__container .footer__left h4 {
+footer .footer__container .footer__left .footer__contact {
   font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
   line-height: 22px;
@@ -961,7 +963,7 @@ footer .footer__container .footer__left h4 {
   margin-bottom: 19px;
 }
 
-footer .footer__container .footer__left h4 img {
+footer .footer__container .footer__left .footer__contact img {
   margin-right: 9px;
 }
 
@@ -975,7 +977,7 @@ footer .footer__container .footer__right {
           justify-content: space-between;
 }
 
-footer .footer__container .footer__right h1 {
+footer .footer__container .footer__right .footer__linkTitle {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -985,13 +987,13 @@ footer .footer__container .footer__right h1 {
   margin-bottom: 6px;
 }
 
-footer .footer__container .footer__right li {
+footer .footer__container .footer__right .footer_link {
   list-style: none;
   height: 31px;
   margin-bottom: 4px;
 }
 
-footer .footer__container .footer__right li a {
+footer .footer__container .footer__right .footer_link a {
   font-family: "Montserrat", sans-serif;
   font-size: 12.8px;
   line-height: 22px;
@@ -1017,13 +1019,13 @@ footer .footer__bottom {
   margin-bottom: 15px;
 }
 
-footer .footer__bottom p:nth-child(1) {
+footer .footer__bottom .footer__bottomText:nth-child(1) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-footer .footer__bottom p:nth-child(3) {
+footer .footer__bottom .footer__bottomText:nth-child(3) {
   margin: 0 112px;
 }
 /*# sourceMappingURL=style.css.map */

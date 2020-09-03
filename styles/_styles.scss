@@ -73,6 +73,7 @@ $fontRoboto: "Montserrat", sans-serif;
 
 @mixin smallText {
   font-family: $fontRoboto;
+  font-weight: 300;
   font-size: 16px;
   line-height: 175.1%;
   color: #9da8b6;

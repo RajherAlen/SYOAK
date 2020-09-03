@@ -10,7 +10,7 @@
     @include paddingLeftRight();
     display: flex;
     justify-content: space-between;
-    .right__section {
+    .form__right {
       position: relative;
       .googleMap {
         position: absolute;
@@ -23,16 +23,16 @@
         left: -343px;
       }
     }
-    .left__section {
+    .form__left {
       width: 441px;
-      h1 {
+      .form__title {
         @include bigTitle();
         margin-bottom: 94px;
       }
       form {
         display: flex;
         flex-direction: column;
-        input {
+        .form__input {
           @include formText();
           border: 0;
           border-bottom: 1px solid #9da8b6;
@@ -40,17 +40,17 @@
           background-color: transparent;
           margin: 4px 0 28px 0;
         }
-        textarea {
+        .form__textarea {
           @include formText();
           border: 0;
           outline-width: 0;
           background-color: transparent;
           height: 143px;
         }
-        span {
+        .form__text {
           @include extraSmallText();
         }
-        button {
+        .form__button {
           @include primaryBtn();
           width: 225px;
         }
@@ -59,7 +59,7 @@
           height: 64px;
           margin-bottom: 35px;
           @include flexCenter();
-          p {
+          .checkbox__text {
             @include formText();
             margin-top: -15px;
           }

@@ -6,11 +6,11 @@
   .achievements__container {
     @include paddingLeftRight();
 
-    h1 {
+    .achievements__title {
       @include bigTitle();
       margin-bottom: 30px;
     }
-    p {
+    .achievements__text {
       @include bigText();
       margin-bottom: 130px;
     }
@@ -27,7 +27,7 @@
         border-radius: 5px;
         padding-top: 36px;
         padding-left: 23px;
-        h3 {
+        .achievements__number {
           font-family: $fontInter;
           font-style: normal;
           font-weight: 900;
@@ -35,7 +35,7 @@
           line-height: 30px;
           color: #00367a;
         }
-        p {
+        .achievements__text {
           @include smallText();
         }
         .cardImg {
