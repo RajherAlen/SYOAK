@@ -112,3 +112,49 @@ $fontRoboto: "Montserrat", sans-serif;
   line-height: 175.1%;
   color: #00367a;
 }
+
+/* za media query */
+@mixin carouselCard1024 {
+  padding-top: 0px;
+
+  .carousel__left {
+    padding-top: 0px;
+    width: 600px;
+
+    .carousel__title {
+      margin-bottom: 130px;
+      padding-bottom: 20px;
+    }
+    .carousel__boldText {
+      margin-top: 0;
+      margin-bottom: 36px;
+    }
+  }
+
+  .carousel__right {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+}
+
+@mixin carouselCard768px {
+  padding-top: 0px;
+
+  .carousel__left {
+    width: 600px;
+
+    .carousel__title {
+      margin-bottom: 110px;
+      padding-top: 5px;
+    }
+    .carousel__boldText {
+      margin-top: 0;
+      margin-bottom: 36px;
+    }
+  }
+
+  .carousel__right {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+}

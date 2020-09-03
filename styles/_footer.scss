@@ -6,11 +6,13 @@ footer {
   height: 374px;
 
   .hrLineTop {
+    max-width: 1440px;
     position: absolute;
     top: 41px;
     left: 146px;
   }
   .hrLineBottom {
+    max-width: 100vw;
     position: absolute;
     left: 146px;
     bottom: -155px;

@@ -22,6 +22,7 @@ body {
   cursor: pointer;
 }
 
+/* za media query */
 /* HEADER */
 .header {
   display: -webkit-box;
@@ -134,9 +135,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .header {
-    font-size: 10px;
-  }
   .header nav {
     display: none;
   }
@@ -145,6 +143,7 @@ body {
   }
 }
 
+/* za media query */
 /* BANNER */
 .banner {
   max-width: 1440px;
@@ -170,7 +169,6 @@ body {
 }
 
 .banner .banner__container .banner__title {
-  min-width: 300px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -181,7 +179,6 @@ body {
 }
 
 .banner .banner__container .banner__text {
-  width: 90%;
   max-width: 500px;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -191,7 +188,6 @@ body {
 }
 
 .banner .banner__container .banner__break {
-  max-width: 90%;
   margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,14 +223,23 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner .banner__title {
-    font-size: 40px;
+  .banner {
+    padding-top: 50px;
+  }
+  .banner .banner__container .banner__title {
+    font-size: 50px;
+    margin-bottom: 37px;
+  }
+  .banner .banner__container .banner__text {
+    font-size: 17px;
+    margin-bottom: 27px;
   }
   .banner .banner__break .banner__line {
     width: 110px;
   }
 }
 
+/* za media query */
 .content {
   max-width: 1440px;
   margin: 0 auto;
@@ -409,13 +414,13 @@ body {
 
 @media only screen and (max-width: 768px) {
   .content .content__cardRow {
-    width: 420px;
+    padding-right: 69px;
     height: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .content .content__cardRow .content__cardText {
-    width: 520px;
+    width: 420px;
     margin-bottom: 50px;
   }
   .content .row__first {
@@ -434,6 +439,7 @@ body {
   }
 }
 
+/* za media query */
 .carousel {
   max-width: 1440px;
   margin: 0 auto;
@@ -478,7 +484,6 @@ body {
 }
 
 .carousel .carousel__container .glider {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,8 +503,20 @@ body {
   padding-top: 110px;
 }
 
+.carousel .carousel__container .glider .carousel__card .navigation__text {
+  position: absolute;
+  top: 210px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ff7616;
+}
+
 .carousel .carousel__container .glider .carousel__card .carousel__left {
   width: 450px;
+  padding-top: 60px;
 }
 
 .carousel .carousel__container .glider .carousel__card .carousel__left .carousel__title {
@@ -530,8 +547,8 @@ body {
 
 .carousel .carousel__container .glider .carousel__right {
   position: relative;
-  padding-right: 139px;
-  padding-top: 50px;
+  margin-right: 139px;
+  margin-top: 170px;
 }
 
 .carousel .carousel__container .glider .carousel__right .cardImg {
@@ -539,7 +556,6 @@ body {
 }
 
 .carousel .carousel__container .glider .carousel__right .modalCard {
-  position: absolute;
   background-color: #fff;
   -webkit-box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
           box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
@@ -571,99 +587,237 @@ body {
   color: #9da8b6;
 }
 
+.carousel .carousel__container .glider #card__first {
+  position: relative;
+}
+
+.carousel .carousel__container .glider #card__first .carousel__right {
+  position: relative;
+}
+
 .carousel .carousel__container .glider #card__first .carousel__right .card__left {
   position: absolute;
-  top: 73px;
-  left: -40px;
+  top: 30px;
+  left: -20px;
 }
 
 .carousel .carousel__container .glider #card__first .carousel__right .card__right {
   position: absolute;
-  bottom: 56px;
-  left: 70px;
+  bottom: 6px;
+  left: 73px;
 }
 
-.carousel .carousel__container .glider #card__first .navigation__text {
-  left: 0;
-  position: absolute;
-  top: 210px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
+.carousel .carousel__container .glider #card__second {
+  margin-top: -80px;
+}
+
+.carousel .carousel__container .glider #card__second .carousel__right {
+  position: relative;
 }
 
 .carousel .carousel__container .glider #card__second .carousel__right .card__left {
   position: absolute;
-  bottom: 90px;
+  top: 222px;
   left: -30px;
 }
 
 .carousel .carousel__container .glider #card__second .carousel__right .card__right {
   position: absolute;
-  top: 108px;
-  left: 170px;
+  top: 18px;
+  left: 165px;
 }
 
-.carousel .carousel__container .glider #card__second .navigation__text {
-  position: absolute;
-  top: 210px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
+.carousel .carousel__container .glider #card__third {
+  margin-top: -110px;
+}
+
+.carousel .carousel__container .glider #card__third .carousel__right {
+  position: relative;
 }
 
 .carousel .carousel__container .glider #card__third .carousel__right .card__left {
   position: absolute;
-  bottom: 122px;
+  top: 177px;
   left: -8px;
 }
 
 .carousel .carousel__container .glider #card__third .carousel__right .card__right {
   position: absolute;
-  top: 108px;
+  top: 7px;
   left: 70px;
 }
 
-.carousel .carousel__container .glider #card__third .navigation__text {
-  position: absolute;
-  top: 210px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
+.carousel .carousel__container .glider #card__fourth {
+  margin-top: -70px;
 }
 
 .carousel .carousel__container .glider #card__fourth .carousel__right .card__left {
   position: absolute;
-  bottom: 138px;
+  top: 180px;
   left: -48px;
 }
 
 .carousel .carousel__container .glider #card__fourth .carousel__right .card__right {
   position: absolute;
-  top: 90px;
+  top: 7px;
   left: -20px;
 }
 
-.carousel .carousel__container .glider #card__fourth .navigation__text {
-  position: absolute;
-  top: 210px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ff7616;
+@media only screen and (max-width: 1024px) {
+  #card__first {
+    padding-top: 0px;
+  }
+  #card__first .carousel__left {
+    padding-top: 0px;
+    width: 600px;
+  }
+  #card__first .carousel__left .carousel__title {
+    margin-bottom: 130px;
+    padding-bottom: 20px;
+  }
+  #card__first .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  #card__first .carousel__right {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  #card__second {
+    padding-top: 0px;
+  }
+  #card__second .carousel__left {
+    padding-top: 0px;
+    width: 600px;
+  }
+  #card__second .carousel__left .carousel__title {
+    margin-bottom: 130px;
+    padding-bottom: 20px;
+  }
+  #card__second .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  #card__second .carousel__right {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  #card__third {
+    padding-top: 0px;
+  }
+  #card__third .carousel__left {
+    padding-top: 0px;
+    width: 600px;
+  }
+  #card__third .carousel__left .carousel__title {
+    margin-bottom: 130px;
+    padding-bottom: 20px;
+  }
+  #card__third .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  #card__third .carousel__right {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  #card__fourth {
+    padding-top: 0px;
+  }
+  #card__fourth .carousel__left {
+    padding-top: 0px;
+    width: 600px;
+  }
+  #card__fourth .carousel__left .carousel__title {
+    margin-bottom: 130px;
+    padding-bottom: 20px;
+  }
+  #card__fourth .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  #card__fourth .carousel__right {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
 }
 
+@media only screen and (max-width: 768px) {
+  .carousel #card__first {
+    padding-top: 0px;
+  }
+  .carousel #card__first .carousel__left {
+    width: 600px;
+  }
+  .carousel #card__first .carousel__left .carousel__title {
+    margin-bottom: 110px;
+    padding-top: 5px;
+  }
+  .carousel #card__first .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .carousel #card__first .carousel__right {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  .carousel #card__second {
+    padding-top: 0px;
+  }
+  .carousel #card__second .carousel__left {
+    width: 600px;
+  }
+  .carousel #card__second .carousel__left .carousel__title {
+    margin-bottom: 110px;
+    padding-top: 5px;
+  }
+  .carousel #card__second .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .carousel #card__second .carousel__right {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  .carousel #card__third {
+    padding-top: 0px;
+  }
+  .carousel #card__third .carousel__left {
+    width: 600px;
+  }
+  .carousel #card__third .carousel__left .carousel__title {
+    margin-bottom: 110px;
+    padding-top: 5px;
+  }
+  .carousel #card__third .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .carousel #card__third .carousel__right {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  .carousel #card__fourth {
+    padding-top: 0px;
+  }
+  .carousel #card__fourth .carousel__left {
+    width: 600px;
+  }
+  .carousel #card__fourth .carousel__left .carousel__title {
+    margin-bottom: 110px;
+    padding-top: 5px;
+  }
+  .carousel #card__fourth .carousel__left .carousel__boldText {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .carousel #card__fourth .carousel__right {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+}
+
+/* za media query */
 .achievements {
   max-width: 1440px;
   margin: 0 auto;
@@ -755,24 +909,46 @@ body {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .achievements__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .achievements__row .achievements__card:nth-child(1) {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .achievements__row .achievements__card {
+    margin-bottom: 50px;
+  }
+  .achievements__row .achievements__card:nth-child(4) {
+    margin-bottom: -30px;
+  }
+}
+
+/* za media query */
 .form__section {
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 210px;
   margin-top: 198px;
-  min-height: 617px;
   position: relative;
 }
 
 .form__section .form__container {
   padding-left: 79px;
   padding-right: 69px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form__section .form__container .form__right {
@@ -780,15 +956,13 @@ body {
 }
 
 .form__section .form__container .form__right .googleMap {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-top: 170px;
 }
 
 .form__section .form__container .form__right .circle {
   position: absolute;
-  bottom: 170px;
-  left: -343px;
+  bottom: 172px;
+  left: 220px;
 }
 
 .form__section .form__container .form__left {
@@ -802,7 +976,7 @@ body {
   font-size: 48px;
   line-height: 58px;
   color: #00367a;
-  margin-bottom: 94px;
+  margin-bottom: 36px;
 }
 
 .form__section .form__container .form__left form {
@@ -903,6 +1077,27 @@ body {
   margin-top: -15px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .form__section .form__container .form__right .googleMap {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form__section .form__container {
+    padding-right: 69px;
+  }
+  .form__section .form__container .form__right .googleMap {
+    width: 100%;
+  }
+  .form__section .form__container .form__right .circle {
+    position: absolute;
+    bottom: 125px;
+    left: 157px;
+  }
+}
+
+/* za media query */
 footer {
   max-width: 1440px;
   margin: 0 auto;
@@ -912,12 +1107,14 @@ footer {
 }
 
 footer .hrLineTop {
+  max-width: 1440px;
   position: absolute;
   top: 41px;
   left: 146px;
 }
 
 footer .hrLineBottom {
+  max-width: 100vw;
   position: absolute;
   left: 146px;
   bottom: -155px;

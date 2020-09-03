@@ -54,3 +54,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .achievements__row {
+    flex-wrap: wrap;
+    .achievements__card:nth-child(1) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .achievements__row {
+    .achievements__card {
+      margin-bottom: 50px;
+    }
+    .achievements__card:nth-child(4) {
+      margin-bottom: -30px;
+    }
+  }
+}

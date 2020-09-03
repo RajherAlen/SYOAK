@@ -3,31 +3,32 @@
 .form__section {
   @include width1440();
   margin-top: 198px;
-  min-height: 617px;
   position: relative;
 
   .form__container {
     @include paddingLeftRight();
+    position: relative;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     .form__right {
       position: relative;
+
       .googleMap {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        margin-top: 170px;
       }
       .circle {
         position: absolute;
-        bottom: 170px;
-        left: -343px;
+        bottom: 172px;
+        left: 220px;
       }
     }
     .form__left {
       width: 441px;
       .form__title {
         @include bigTitle();
-        margin-bottom: 94px;
+        margin-bottom: 36px;
       }
       form {
         display: flex;
@@ -63,6 +64,36 @@
             @include formText();
             margin-top: -15px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .form__section {
+    .form__container {
+      .form__right {
+        .googleMap {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form__section {
+    .form__container {
+      padding-right: 69px;
+      .form__right {
+        .googleMap {
+          width: 100%;
+        }
+        .circle {
+          position: absolute;
+          bottom: 125px;
+          left: 157px;
         }
       }
     }

@@ -135,11 +135,11 @@
 @media only screen and (max-width: 768px) {
   .content {
     .content__cardRow {
-      width: 420px;
+      padding-right: 69px;
       height: auto;
       flex-wrap: wrap;
       .content__cardText {
-        width: 520px;
+        width: 420px;
         margin-bottom: 50px;
       }
     }

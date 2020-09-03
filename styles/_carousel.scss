@@ -31,7 +31,6 @@
     }
 
     .glider {
-      position: relative;
       display: flex;
       overflow: hidden;
 
@@ -41,8 +40,13 @@
         justify-content: space-between;
         width: 100vw !important;
         padding-top: 110px;
+        .navigation__text {
+          @include orangeText();
+        }
+
         .carousel__left {
           width: 450px;
+          padding-top: 60px;
           .carousel__title {
             font-family: $fontInter;
             font-style: normal;
@@ -70,13 +74,13 @@
       }
       .carousel__right {
         position: relative;
-        padding-right: 139px;
-        padding-top: 50px;
+        margin-right: 139px;
+        margin-top: 170px;
+
         .cardImg {
           opacity: 0.5;
         }
         .modalCard {
-          position: absolute;
           background-color: #fff;
           box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
           border-radius: 5px;
@@ -101,78 +105,103 @@
       }
 
       #card__first {
+        position: relative;
         .carousel__right {
+          position: relative;
           .card__left {
             position: absolute;
-            top: 73px;
-            left: -40px;
+            top: 30px;
+            left: -20px;
           }
           .card__right {
             position: absolute;
-            bottom: 56px;
-            left: 70px;
+            bottom: 6px;
+            left: 73px;
           }
-        }
-
-        .navigation__text {
-          left: 0;
-          @include orangeText();
         }
       }
 
       #card__second {
+        margin-top: -80px;
         .carousel__right {
+          position: relative;
           .card__left {
             position: absolute;
-            bottom: 90px;
+            top: 222px;
             left: -30px;
           }
           .card__right {
             position: absolute;
-            top: 108px;
-            left: 170px;
+            top: 18px;
+            left: 165px;
           }
-        }
-        .navigation__text {
-          @include orangeText();
         }
       }
 
       #card__third {
+        margin-top: -110px;
         .carousel__right {
+          position: relative;
           .card__left {
             position: absolute;
-            bottom: 122px;
+            top: 177px;
             left: -8px;
           }
           .card__right {
             position: absolute;
-            top: 108px;
+            top: 7px;
             left: 70px;
           }
-        }
-        .navigation__text {
-          @include orangeText();
         }
       }
 
       #card__fourth {
+        margin-top: -70px;
         .carousel__right {
           .card__left {
             position: absolute;
-            bottom: 138px;
+            top: 180px;
             left: -48px;
           }
           .card__right {
             position: absolute;
-            top: 90px;
+            top: 7px;
             left: -20px;
           }
         }
-        .navigation__text {
-          @include orangeText();
-        }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #card__first {
+    @include carouselCard1024();
+  }
+  #card__second {
+    @include carouselCard1024();
+  }
+  #card__third {
+    @include carouselCard1024();
+  }
+  #card__fourth {
+    @include carouselCard1024();
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    #card__first {
+      @include carouselCard768px();
+    }
+    #card__second {
+      @include carouselCard768px();
+    }
+    #card__third {
+      @include carouselCard768px();
+    }
+    #card__fourth {
+      @include carouselCard768px();
     }
   }
 }
