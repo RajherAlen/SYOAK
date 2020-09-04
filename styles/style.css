@@ -281,6 +281,7 @@ body {
   .banner .banner__break {
     width: 100%;
     margin-top: 100px;
+    padding-right: 20px;
   }
   .banner .banner__break .banner__line {
     width: 110px;
@@ -1166,6 +1167,18 @@ body {
     padding-left: 55px;
     padding-right: 25px;
   }
+  .achievements .achievements__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .achievements .achievements__row .achievements__card {
     margin-bottom: 40px;
   }
@@ -1185,11 +1198,11 @@ body {
   .achievements .achievements__container .achievements__title {
     font-size: 40px;
   }
+  .achievements .achievements__container .achievements__text {
+    margin-bottom: 70px;
+  }
   .achievements .achievements__row .achievements__card {
     margin-bottom: 40px;
-  }
-  .achievements .achievements__row .achievements__card:nth-child(4) .achievements__text {
-    margin-bottom: 0;
   }
 }
 
