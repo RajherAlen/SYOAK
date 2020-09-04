@@ -89,3 +89,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .header {
+    .verticalLine {
+      display: none;
+    }
+    .arrow__down {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    @include paddingLeftRight375px();
+    padding-top: 15px;
+  }
+}

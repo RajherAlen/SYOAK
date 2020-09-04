@@ -36,7 +36,6 @@
       }
     }
     .content__cardImg {
-      width: 338px;
       display: flex;
       justify-content: center;
     }
@@ -52,9 +51,7 @@
     .content__cardImg {
       position: relative;
       .content__modalCard {
-        position: absolute;
         display: flex;
-        align-items: flex-start;
         width: 249px;
         height: 96px;
         background-color: #fff;
@@ -63,18 +60,19 @@
         z-index: 22;
         margin-top: 47px;
         margin-left: 82px;
+
         p {
           width: 200px;
           height: 66px;
-          font-family: $fontRoboto;
+          font-family: $fontInter;
           font-weight: 500;
           font-size: 12.8px;
           line-height: 175.1%;
           color: #666666;
-          margin: 14px 6px 16px 16px;
+          margin: 14px 6px 16px 0;
         }
         img {
-          margin: 19px 0 65px 14px;
+          margin: 19px 16px 65px 14px;
         }
       }
 
@@ -135,8 +133,10 @@
 @media only screen and (max-width: 768px) {
   .content {
     padding-top: 100px;
+
     .content__cardRow {
-      padding-right: 69px;
+      padding-right: 0;
+      padding-left: 79px;
       height: auto;
       flex-wrap: wrap;
       .content__cardText {
@@ -145,7 +145,7 @@
       }
     }
     .row__first {
-      margin-bottom: 390px;
+      margin-bottom: 200px;
     }
 
     .row__second {
@@ -155,6 +155,70 @@
       .content__cardText {
         order: 1;
         margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .content {
+    padding: 100px 25px 0 55px;
+    .content__banner {
+      padding-left: 0;
+    }
+    .content__cardRow {
+      padding-left: 0;
+      padding-right: 25px;
+      height: auto;
+      flex-wrap: wrap;
+
+      .content__cardText {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .row__first {
+      margin-bottom: 200px;
+    }
+    .row__second {
+      .cardImg {
+        order: 2;
+      }
+      .content__cardText {
+        order: 1;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .content {
+    @include paddingLeftRight375px();
+    margin-top: 50px;
+    .content__banner {
+      .content__bannerTitle {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .content {
+    .content__cardRow {
+      .cardImg {
+        .cardImg__main {
+          width: 100%;
+        }
+      }
+    }
+    .row__first {
+      .content__cardImg {
+        padding-left: 25px;
+        .content__modalCard {
+          margin: 0;
+        }
       }
     }
   }

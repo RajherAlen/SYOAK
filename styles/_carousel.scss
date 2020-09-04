@@ -9,7 +9,7 @@
     display: flex;
     margin-right: 0;
     padding-left: 79px;
-    height: 900px;
+    min-height: 900px;
     display: flex;
     background-color: #fff;
 
@@ -202,6 +202,99 @@
     }
     #card__fourth {
       @include carouselCard768px();
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .carousel {
+    padding-left: 0;
+    .carousel__container {
+      @include paddingLeftRight425px;
+      .carousel__title {
+        margin-top: 0px;
+      }
+      .glider {
+        .carousel__right {
+          width: 300px;
+          margin: 0;
+        }
+      }
+    }
+    #card__first {
+      .carousel__right {
+        .modalCard {
+          margin-left: -30px;
+        }
+      }
+    }
+    #card__second {
+      .carousel__right {
+        .card__right {
+          margin-left: -130px;
+        }
+      }
+    }
+    #card__third {
+      .carousel__right {
+        .card__right {
+          margin-left: -20px;
+        }
+      }
+    }
+    #card__fourth {
+      .carousel__right {
+        .card__right {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel {
+    .carousel__container {
+      @include paddingLeftRight375px();
+
+      .carousel__title {
+        margin-top: 0px;
+        font-size: 43px !important;
+      }
+      .glider {
+        .carousel__right {
+          width: 300px;
+          margin: 50px !important;
+        }
+      }
+    }
+    #card__first {
+      .carousel__right {
+        .modalCard {
+          margin-left: -30px;
+        }
+      }
+    }
+    #card__second {
+      .carousel__right {
+        .card__right {
+          margin-left: -130px;
+        }
+      }
+    }
+    #card__third {
+      .carousel__right {
+        .card__right {
+          margin-left: -20px;
+        }
+      }
+    }
+    #card__fourth {
+      .carousel__right {
+        .card__right {
+          margin-left: 0px;
+        }
+      }
     }
   }
 }

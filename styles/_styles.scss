@@ -9,9 +9,23 @@ $fontRoboto: "Montserrat", sans-serif;
   padding-left: 210px;
 }
 
+@mixin paddingLeftRight768px {
+  padding-left: 210px;
+  padding-right: 69px;
+}
+
 @mixin paddingLeftRight {
   padding-left: 79px;
   padding-right: 69px;
+}
+
+@mixin paddingLeftRight425px {
+  padding-left: 55px;
+  padding-right: 25px;
+}
+
+@mixin paddingLeftRight375px {
+  padding: 0 25px;
 }
 
 @mixin flexCenter {

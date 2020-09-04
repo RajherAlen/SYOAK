@@ -70,7 +70,6 @@
     .banner__container {
       width: 100%;
       .banner__title {
-        font-size: 50px;
         margin-bottom: 37px;
       }
       .banner__text {
@@ -83,6 +82,45 @@
       margin-top: 100px;
       .banner__line {
         width: 110px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .banner {
+    padding-top: 50px;
+    @include paddingLeftRight425px;
+    .banner__container {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      .banner__title {
+        font-size: 50px;
+        margin-bottom: 37px;
+      }
+      .banner__text {
+        font-size: 17px;
+        margin-bottom: 27px;
+      }
+      .banner__break {
+        width: 100%;
+        margin-top: 70px;
+        .banner__line {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .banner {
+    padding-top: 50px;
+    @include paddingLeftRight375px();
+    margin-top: 40px;
+    .banner__container {
+      .banner__title {
+        font-size: 45px;
       }
     }
   }
