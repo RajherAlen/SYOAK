@@ -970,24 +970,43 @@ body {
     padding: 0 25px;
   }
   .carousel .carousel__container .carousel__title {
-    margin-top: 0px;
+    margin-top: 20px;
     font-size: 43px !important;
   }
   .carousel .carousel__container .glider .carousel__right {
-    width: 300px;
     margin: 50px !important;
   }
-  .carousel #card__first .carousel__right .modalCard {
-    margin-left: -30px;
+  .carousel .carousel__container .glider .carousel__right .modalCard {
+    width: 251px;
   }
-  .carousel #card__second .carousel__right .card__right {
-    margin-left: -130px;
+  .carousel .carousel__container .glider .carousel__right .modalCard .modal__text {
+    font-size: 10px;
   }
-  .carousel #card__third .carousel__right .card__right {
+  .carousel #card__first .carousel__right .card__right {
+    margin-left: -120px;
+  }
+  .carousel #card__first .carousel__right .card__left {
     margin-left: -20px;
   }
+  .carousel #card__second .carousel__right .card__right {
+    margin-left: -200px;
+  }
+  .carousel #card__second .carousel__right .card__left {
+    margin-top: -80px;
+    margin-left: -5px;
+  }
+  .carousel #card__third .carousel__right .card__right {
+    margin-left: -110px;
+  }
+  .carousel #card__third .carousel__right .card__left {
+    margin-top: -80px;
+    margin-left: -40px;
+  }
   .carousel #card__fourth .carousel__right .card__right {
-    margin-left: 0px;
+    margin-left: -20px;
+  }
+  .carousel #card__fourth .carousel__right .card__left {
+    margin-top: -80px;
   }
 }
 

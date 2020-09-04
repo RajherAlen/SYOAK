@@ -258,41 +258,60 @@
       @include paddingLeftRight375px();
 
       .carousel__title {
-        margin-top: 0px;
+        margin-top: 20px;
         font-size: 43px !important;
       }
       .glider {
         .carousel__right {
-          width: 300px;
           margin: 50px !important;
+          .modalCard {
+            width: 251px;
+            .modal__text {
+              font-size: 10px;
+            }
+          }
         }
       }
     }
     #card__first {
       .carousel__right {
-        .modalCard {
-          margin-left: -30px;
+        .card__right {
+          margin-left: -120px;
+        }
+        .card__left {
+          margin-left: -20px;
         }
       }
     }
     #card__second {
       .carousel__right {
         .card__right {
-          margin-left: -130px;
+          margin-left: -200px;
+        }
+        .card__left {
+          margin-top: -80px;
+          margin-left: -5px;
         }
       }
     }
     #card__third {
       .carousel__right {
         .card__right {
-          margin-left: -20px;
+          margin-left: -110px;
+        }
+        .card__left {
+          margin-top: -80px;
+          margin-left: -40px;
         }
       }
     }
     #card__fourth {
       .carousel__right {
         .card__right {
-          margin-left: 0px;
+          margin-left: -20px;
+        }
+        .card__left {
+          margin-top: -80px;
         }
       }
     }
