@@ -1003,8 +1003,16 @@ body {
   }
   .carousel .carousel__container .glider .carousel__right .modalCard {
     width: 251px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .carousel .carousel__container .glider .carousel__right .modalCard .modal__text {
+    width: 220px;
     font-size: 10px;
   }
   .carousel #card__first .carousel__right .card__right {

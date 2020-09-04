@@ -266,6 +266,9 @@
           margin: 50px !important;
           .modalCard {
             width: 251px;
+            height: 50px;
+            display: flex;
+            align-items: center;
             .modal__text {
               width: 220px;
               font-size: 10px;
