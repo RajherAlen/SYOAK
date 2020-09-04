@@ -165,13 +165,14 @@
     padding: 100px 25px 0 55px;
     .content__banner {
       padding-left: 0;
+      margin-bottom: 70px;
     }
     .content__cardRow {
       padding-left: 0;
       padding-right: 25px;
       height: auto;
       flex-wrap: wrap;
-
+      margin-bottom: 80px;
       .content__cardText {
         width: 100%;
         margin-bottom: 20px;
@@ -186,7 +187,7 @@
       }
       .content__cardText {
         order: 1;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
       }
     }
   }
